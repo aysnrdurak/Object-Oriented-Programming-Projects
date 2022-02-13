@@ -25,3 +25,7 @@ elif islem == "2":
 
 elif islem == "3":
     print("Toplam: {}, Çarpım: {}".format(result1, result2))
+    
+    
+else:
+    print("Lütfen uygun tuşlama yapınız.")
