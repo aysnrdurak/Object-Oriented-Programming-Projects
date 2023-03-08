@@ -17,7 +17,7 @@ class VehicleRent:
         
         
     def rentHourly(self, n):
-        "n means is vehicle count"
+        """n means is vehicle count"""
 
         if n <= 0:
             print("Number should be positive")
@@ -43,7 +43,7 @@ class VehicleRent:
             return None
 
         elif n > self.stock:
-            print("Sorry {} ehicle available to rent".format(self.stock))
+            print("Sorry {} vehicle available to rent".format(self.stock))
             return None
 
         else:
@@ -58,7 +58,7 @@ class VehicleRent:
         car_h_price = 10
         car_d_price = car_h_price*8/10*24
         bike_h_price = 5
-        bike_d_price = bike_h_price*3/5*24
+        bike_d_price = bike_h_price*7/10*24
 
         rentalTime, rentalBasis, numberOfVehicle = request
         bill = 0
@@ -79,6 +79,7 @@ class VehicleRent:
                     bill = bill*0.8
 
                 print("Price: € {} ".format(bill))
+                return bill
 
         elif brand == "bike":
             if rentalTime and rentalBasis and numberOfVehicle:
@@ -95,12 +96,12 @@ class VehicleRent:
                 if (4 <= numberOfVehicle):
                     bill = bill*0.8
 
-                print("Price: € {} ".format(bill))          
+                print("Price: € {} ".format(bill))    
+                return bill      
 
         else:
-            print("Error! Please contact with somebody from this company.")                     
-
-
+            print("Error! Please contact with somebody from this company.")   
+            return None                  
 
 #Child Class
 class CarRent(VehicleRent):
@@ -114,6 +115,7 @@ class CarRent(VehicleRent):
 
     def discount(self):      
         bill = b - (b*discount_rate)/100
+        return bill
 
 #Child class
 class BikeRent(VehicleRent):
@@ -183,15 +185,16 @@ class Customer:
     def returnVehicle(self, brand):
 
         if brand == "bike":
-            if self.rental_time_b and self.rentalBasis_b and self.bikes:
+            if self.rentalTime_b and self.rentalBasis_b and self.bikes:
                 return self.rentalTime_b, self.rentalBasis_b, self.bikes
             else:
                 return 0,0,0
 
-        elif brand == "cars":
+        elif brand == "car":
             if self.rental_time_c and self.rentalBasis_c and self.cars:
                 return self.rentalTime_c, self.rentalBasis_c, self.cars
             else:
                 return 0,0,0
         else:
             print("Return vehicle Error")
+        
