@@ -18,7 +18,7 @@ while True:
         main_menu = False
         choice = input("Enter Choice: ")
 
-    if choice == "B" or "b":
+    if choice == "B" or choice == "b":
         print("""
         ***** Bike Menu *****
         1. Display available bikes
@@ -48,7 +48,7 @@ while True:
             
         elif choice == 3: 
             customer.rentalTime_b = bike.rentDaily(customer.requestVehicle("bike"))
-            customer.rentalBasis_b = 1
+            customer.rentalBasis_b = 2
             main_menu = True
             print("------------------------------------------")
 
@@ -65,9 +65,10 @@ while True:
 
         else:
             print("Please just write number until 6")
+            main_menu = True
 
 
-    if choice == "C" or "c":
+    elif choice == "C" or choice == "c":
         print("""
         ***** Car Menu *****
         1. Display available cars
@@ -97,7 +98,7 @@ while True:
             
         elif choice == 3: 
             customer.rentalTime_c = car.rentDaily(customer.requestVehicle("car"))
-            customer.rentalBasis_c = 1
+            customer.rentalBasis_c = 2
             main_menu = True
             print("------------------------------------------")
 
@@ -114,8 +115,9 @@ while True:
 
         else:
             print("Please just write number until 6")
+            main_menu = True
 
-    elif choice == "Q" or "q":
+    elif choice == "Q" or choice == "q":
         break
 
     else:
@@ -123,3 +125,4 @@ while True:
         main_menu = True
 
     print("Thank youuu")
+
