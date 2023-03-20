@@ -18,7 +18,7 @@ You can learn inheritance with this project
 
 
 
-##### Project Idea
+##### Project Ideas
 
 - Kitap Kütüphanesi: Bu proje, kitaplarınızın listesini tutan bir uygulamadır. Her kitap bir nesne olarak modellenir ve bu nesneler, kitapların özelliklerini (yazar, başlık, yayıncı, tarih vb.) tutar. Kullanıcı, kitapları ekleyebilir, silebilir veya düzenleyebilir.
 
