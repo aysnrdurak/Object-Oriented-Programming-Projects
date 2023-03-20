@@ -8,4 +8,14 @@
 
 ## 🧮 Calculator
 
+## 🖥 Simple Website
+
+You can learn inheritance with this project
+
+## 📐 Shapes
+
+## 🚗 Rent Vehicle
+
+
+
 
