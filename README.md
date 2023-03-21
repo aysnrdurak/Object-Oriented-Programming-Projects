@@ -8,14 +8,19 @@
 
 ## 🧮 Calculator
 
+With this project we can see simple class and methods structures. I created a calculator it can do three operations.
+
 ## 🖥 Simple Website
 
-You can learn inheritance with this project
+You can learn inheritance with this project.
 
 ## 📐 Shapes
 
+With this project you can see and use abstract classes/ abstract methods. 
+
 ## 🚗 Rent Vehicle
 
+It is our first usable website project. I creadted 2 file: first file have our sample classes and methods, second one is using first files classes/methods and it have website site.
 
 
 ##### Project Ideas
